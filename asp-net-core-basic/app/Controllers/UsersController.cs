@@ -20,7 +20,7 @@ namespace TodoApi.Controllers
         {
             new User
                 {
-                    Id=1, Name="tester" 
+                    Id=1, Name="tester"
                 },
             new User
                 {
@@ -43,14 +43,14 @@ namespace TodoApi.Controllers
             var username = _myClaim.ParseAuthClaim(HttpContext);
 
             _logger.Log(LogLevel.Debug, $"User {username} is getting all users.");
-            
+
             return _users;
         }
 
         // POST api/<UsersController>
         [AllowAnonymous]
         [HttpPost("authenticate")]
-        public IActionResult Authenticate([FromBody]UserCredential userCredential)
+        public IActionResult Authenticate([FromBody] UserCredential userCredential)
         {
             var token = _jwtAuth.Authenticate(userCredential.UserName, userCredential.Password);
             if (token == null)

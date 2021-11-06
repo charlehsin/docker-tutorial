@@ -8,14 +8,14 @@ namespace TodoApi.Authentication
     {
         public string ParseAuthClaim(HttpContext context)
         {
-            var currentUser = context.User;    
+            var currentUser = context.User;
             if (currentUser == null)
             {
                 return string.Empty;
             }
 
-            if (currentUser.HasClaim(c => c.Type == ClaimTypes.Name))    
-            {    
+            if (currentUser.HasClaim(c => c.Type == ClaimTypes.Name))
+            {
                 return currentUser.Claims.FirstOrDefault(c => c.Type == ClaimTypes.Name).Value;
             }
 

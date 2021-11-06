@@ -118,7 +118,7 @@ namespace TodoApi.Controllers
         public async Task<IActionResult> DeleteTodoItem(long id)
         {
             var username = _myClaim.ParseAuthClaim(HttpContext);
-            
+
             var todoItem = await _todoItemsRepository.FindAsync(id);
             if (todoItem == null)
             {

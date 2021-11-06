@@ -6,7 +6,7 @@ using Microsoft.IdentityModel.Tokens;
 
 namespace TodoApi.Authentication
 {
-    public class JwtAuth: IJwtAuth
+    public class JwtAuth : IJwtAuth
     {
         private const string Username = "tester";
         private const string Password = "P@ssw0rd";
@@ -17,7 +17,7 @@ namespace TodoApi.Authentication
         {
             _key = key;
         }
-        
+
         public string Authenticate(string username, string password)
         {
             // TODO: This is just for tutorial purpose. The real production application should have real flow to check username and password.
@@ -27,17 +27,14 @@ namespace TodoApi.Authentication
                 return null;
             }
 
-            // 1. Create Security Token Handler
-            var tokenHandler = new JwtSecurityTokenHandler();
+            var jwtSecurityTokenHandler = new JwtSecurityTokenHandler();
 
-            // 2. Create Private Key to Encrypted
             var tokenKey = Encoding.ASCII.GetBytes(_key);
 
-            //3. Create JETdescriptor
-            var tokenDescriptor = new SecurityTokenDescriptor()
+            var securityTokenDescriptor = new SecurityTokenDescriptor()
             {
                 Subject = new ClaimsIdentity(
-                    new []
+                    new[]
                     {
                         new Claim(ClaimTypes.Name, username)
                     }),
@@ -45,12 +42,10 @@ namespace TodoApi.Authentication
                 SigningCredentials = new SigningCredentials(
                     new SymmetricSecurityKey(tokenKey), SecurityAlgorithms.HmacSha256Signature)
             };
-            
-            //4. Create Token
-            var token = tokenHandler.CreateToken(tokenDescriptor);
 
-            // 5. Return Token from method
-            return tokenHandler.WriteToken(token);
+            var token = jwtSecurityTokenHandler.CreateToken(securityTokenDescriptor);
+
+            return jwtSecurityTokenHandler.WriteToken(token);
         }
     }
 }
