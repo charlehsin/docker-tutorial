@@ -1,6 +1,4 @@
-# Tutorial
-
-https://docs.docker.com/ 
+# Tutorial for Docker
 
 ## Installation
 
@@ -11,15 +9,18 @@ https://docs.docker.com/
 
 ## Overview
 
-- Basic guide: https://docs.microsoft.com/en-us/learn/modules/intro-to-docker-containers/
+- General
+   - https://docs.docker.com/ 
+- Basic guide
+   - https://docs.microsoft.com/en-us/learn/modules/intro-to-docker-containers/
 - Getting started guide: getting-started-from-docker folder.
 - ASP.NET Core guide: asp-net-core-basic folder.
 
-## Visual Studio Code extensions
+## Useful Visual Studio Code extensions
 
 - https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker 
 
-## Some docker commands
+## Useful docker commands
 
 - docker build -t getting-started .
 - docker run -dp 3000:3000 getting-started
