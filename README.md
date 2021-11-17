@@ -2,19 +2,22 @@
 
 ## Installation
 
-- https://docs.docker.com/desktop/windows/install/
+- [Installation guide](https://docs.docker.com/desktop/windows/install/)
    - Run "sysinfo". Check 4 "Hyper-V" items. On my system, they are all enabled. You may need to go to BIOS to enable virtualization.
    - Follow https://docs.microsoft.com/en-us/windows/wsl/install
    - Follow https://docs.docker.com/desktop/windows/troubleshoot/#virtualization-must-be-enabled 
 
 ## Overview
 
-- General
-   - https://docs.docker.com/ 
-- Basic guide
-   - https://docs.microsoft.com/en-us/learn/modules/intro-to-docker-containers/
+- [General](https://docs.docker.com/) 
+- Guide
+   - [Basic](https://docs.microsoft.com/en-us/learn/modules/intro-to-docker-containers/)
+   - [Develop using Docker](https://docs.docker.com/develop/)
+   - [Set up CI/CD](https://docs.docker.com/ci-cd/best-practices/)
+   - [Samples](https://docs.docker.com/samples/#tutorial-labs)
 - Getting started guide: getting-started-from-docker folder.
-- ASP.NET Core guide: asp-net-core-basic folder.
+- ASP NET Core guide: asp-net-core-basic folder.
+- The GitHub Actions workflow is at  .github\workflows folder.
 
 ## Useful Visual Studio Code extensions
 
