@@ -14,6 +14,9 @@
    - [Basic](https://docs.microsoft.com/en-us/learn/modules/intro-to-docker-containers/)
    - [Develop using Docker](https://docs.docker.com/develop/)
    - [Set up CI/CD](https://docs.docker.com/ci-cd/best-practices/)
+   - [Deploy app to the cloud](https://docs.docker.com/cloud/aci-integration/)
+      - [Azure container instance](https://azure.microsoft.com/en-us/services/container-instances/#overview)
+   - [Run app in production](https://docs.docker.com/get-started/orchestration/)
    - [Samples](https://docs.docker.com/samples/#tutorial-labs)
 - Getting started guide: getting-started-from-docker folder.
 - ASP NET Core guide: asp-net-core-basic folder.
