@@ -16,6 +16,9 @@
    - [Set up CI/CD](https://docs.docker.com/ci-cd/best-practices/)
    - [Deploy app to the cloud](https://docs.docker.com/cloud/aci-integration/)
       - [Azure container instance](https://azure.microsoft.com/en-us/services/container-instances/#overview)
+   - [Docker Swarm Mode](https://docs.docker.com/engine/swarm/)
+   - [Docker networking](https://docs.docker.com/network/)
+   - [Manage application data](https://docs.docker.com/storage/)
    - [Samples](https://docs.docker.com/samples/#tutorial-labs)
 - Getting started guide: getting-started-from-docker folder.
 - ASP NET Core guide: asp-net-core-basic folder.
