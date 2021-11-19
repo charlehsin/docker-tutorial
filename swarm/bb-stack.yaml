@@ -1,0 +1,7 @@
+version: '3.7'
+
+services:
+  bb-app:
+    image: docker/getting-started
+    ports:
+      - "30000:80"
