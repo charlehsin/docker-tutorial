@@ -25,6 +25,7 @@
 - The GitHub Actions workflow is at .github\workflows folder.
 - The "getting started" on Kubernetes is at kubernetes folder.
 - The "getting started" on Docker Swarm is at swarm folder.
+- The "security lab" is at security folder.
 
 ## Useful Visual Studio Code extensions
 
