@@ -26,6 +26,7 @@
 - The "getting started" on Kubernetes is at kubernetes folder.
 - The "getting started" on Docker Swarm is at swarm folder.
 - The "security lab" is at security folder.
+- The "Go development environment" is at go-dev-env folder.
 
 ## Useful Visual Studio Code extensions
 

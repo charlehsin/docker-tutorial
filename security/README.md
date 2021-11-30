@@ -1,4 +1,4 @@
-# Docker security
+# Tutorial for Docker security
 
 This is to follow https://github.com/docker/labs/blob/master/security/README.md
 
