@@ -2,7 +2,7 @@
 
 ## Basic overview
 
-This is to follow https://docs.docker.com/get-started/orchestration/.
+This is to follow [Docker - Orchestration](https://docs.docker.com/get-started/orchestration/).
 
 The Powershell commands:
 
@@ -13,7 +13,7 @@ The Powershell commands:
 
 ## Deploy to Kubernetes
 
-This is to follow https://docs.docker.com/get-started/kube-deploy/.
+This is to follow [Docker - Deploy to Kubernetes](https://docs.docker.com/get-started/kube-deploy/).
 
 Try the following Powershell command first, as we will use this image in our deployment.
 
@@ -25,3 +25,7 @@ The Powershell commands:
 - kubectl get deployments
 - kubectl get services
 - kubectl delete -f bb.yaml
+
+## Other tutorials
+
+- [Kubernetes for beginners](https://training.play-with-kubernetes.com/kubernetes-workshop/)
